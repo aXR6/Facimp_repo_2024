@@ -5,20 +5,20 @@ DB_NAME="Syslog"
 DB_USER="rsyslog_user"
 DB_PASS="rsyslog_password"
 MARIADB_ROOT_PASS="root_password"
-GRAYLOG_SERVER_IP="127.0.0.1"  # Substitua pelo IP do servidor Graylog
+GRAYLOG_SERVER_IP="172.19.0.5"  # Substitua pelo IP do servidor Graylog
 
 # Atualizar e instalar pacotes necessários
-sudo apt-get update
-sudo apt-get install -y rsyslog-mysql mariadb-server
+apt-get update
+apt-get install -y rsyslog-mysql mariadb-server
 
 # Configurar o MariaDB
-sudo mysql -u root -p"${MARIADB_ROOT_PASS}" -e "CREATE DATABASE ${DB_NAME};"
-sudo mysql -u root -p"${MARIADB_ROOT_PASS}" -e "CREATE USER '${DB_USER}'@'localhost' IDENTIFIED BY '${DB_PASS}';"
-sudo mysql -u root -p"${MARIADB_ROOT_PASS}" -e "GRANT INSERT ON ${DB_NAME}.* TO '${DB_USER}'@'localhost';"
-sudo mysql -u root -p"${MARIADB_ROOT_PASS}" -e "FLUSH PRIVILEGES;"
+mysql -u root -p"${MARIADB_ROOT_PASS}" -e "CREATE DATABASE ${DB_NAME};"
+mysql -u root -p"${MARIADB_ROOT_PASS}" -e "CREATE USER '${DB_USER}'@'localhost' IDENTIFIED BY '${DB_PASS}';"
+mysql -u root -p"${MARIADB_ROOT_PASS}" -e "GRANT INSERT ON ${DB_NAME}.* TO '${DB_USER}'@'localhost';"
+mysql -u root -p"${MARIADB_ROOT_PASS}" -e "FLUSH PRIVILEGES;"
 
 # Criar tabela de logs no banco de dados
-sudo mysql -u root -p"${MARIADB_ROOT_PASS}" ${DB_NAME} <<EOF
+mysql -u root -p"${MARIADB_ROOT_PASS}" ${DB_NAME} <<EOF
 CREATE TABLE SystemEvents
 (
     ID int unsigned not null auto_increment primary key,
@@ -49,14 +49,14 @@ CREATE TABLE SystemEvents
 EOF
 
 # Configurar o rsyslog para enviar logs ao Graylog
-sudo bash -c "cat <<EOF >> /etc/rsyslog.conf
+bash -c "cat <<EOF >> /etc/rsyslog.conf
 
 # Enviando LOGS para o servidor GrayLog
 *.*    @@${GRAYLOG_SERVER_IP}:12201;RSYSLOG_SyslogProtocol23Format
 EOF"
 
 # Reiniciar o rsyslog para aplicar as mudanças
-sudo systemctl restart rsyslog
+systemctl restart rsyslog
 
 # Feedback ao usuário
 echo "Configuração do rsyslog para gravação de logs em MariaDB e envio ao Graylog configurada com sucesso."

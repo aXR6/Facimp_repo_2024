@@ -69,7 +69,7 @@ install_python_dependencies() {
     echo "Instalando dependências Python..."
 
     apt-get install -y python3 python3-pip
-    pip3 install requests
+    pip3 install requests --break-system-packages
 
     echo "Verificando a instalação das dependências Python..."
     python3 --version

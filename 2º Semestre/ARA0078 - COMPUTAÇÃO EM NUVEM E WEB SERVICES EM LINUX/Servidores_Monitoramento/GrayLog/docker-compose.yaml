@@ -1,4 +1,5 @@
-version: '3'
+version: '3.8'
+
 services:
   mongodb:
     image: mongo:6.0.5
@@ -9,16 +10,13 @@ services:
       - graylog
     restart: unless-stopped
 
-  opensearch:
-    image: opensearchproject/opensearch:2.12.0
-    container_name: opensearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.11
+    container_name: elasticsearch
     environment:
-      - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
-      - "bootstrap.memory_lock=true"
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
       - "discovery.type=single-node"
-      - "action.auto_create_index=false"
-      - "plugins.security.ssl.http.enabled=false"
-      - "plugins.security.disabled=true"
+      - "bootstrap.memory_lock=true"
     ulimits:
       memlock:
         soft: -1
@@ -26,7 +24,7 @@ services:
     networks:
       - graylog
     volumes:
-      - es_data:/usr/share/opensearch/data
+      - es_data:/usr/share/elasticsearch/data
     restart: unless-stopped
     ports:
       - "9200:9200"
@@ -39,15 +37,15 @@ services:
       - GRAYLOG_ROOT_PASSWORD_SHA2=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
       - GRAYLOG_ROOT_USERNAME=admin
       - GRAYLOG_ROOT_PASSWORD=YourSecurePassword123
-      - GRAYLOG_HTTP_EXTERNAL_URI=http://127.0.0.1:9000/
-      - GRAYLOG_ELASTICSEARCH_HOSTS=http://opensearch:9200
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.7.0.32:9000/
+      - GRAYLOG_ELASTICSEARCH_HOSTS=http://elasticsearch:9200
       - GRAYLOG_MONGODB_URI=mongodb://mongo:27017/graylog
-    entrypoint: /usr/bin/tini -- wait-for-it opensearch:9200 -- /docker-entrypoint.sh
+    entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 -- /docker-entrypoint.sh
     networks:
       - graylog
     depends_on:
       - mongodb
-      - opensearch
+      - elasticsearch
     ports:
       - "9000:9000"
       - "1514:1514"
@@ -66,3 +64,4 @@ volumes:
 networks:
   graylog:
     driver: bridge
+    

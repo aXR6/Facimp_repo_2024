@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variáveis de configuração do Graylog
-GRAYLOG_SERVER="192.7.0.28"  # Substitua pelo IP do seu servidor Graylog
+GRAYLOG_SERVER="192.7.0.32"  # Substitua pelo IP do seu servidor Graylog
 GRAYLOG_PORT="1514"          # Porta GELF TCP que o Graylog está escutando
 
 # Habilitar UFW
