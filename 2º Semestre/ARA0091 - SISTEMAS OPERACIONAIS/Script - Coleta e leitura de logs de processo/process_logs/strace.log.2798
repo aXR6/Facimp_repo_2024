@@ -1,9 +1,0 @@
-restart_syscall(<... resuming interrupted read ...>) = -1 ETIMEDOUT (Tempo esgotado para conexão)
-nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
-futex(0x3400820, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=259294664}) = -1 ETIMEDOUT (Tempo esgotado para conexão)
-nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
-futex(0x3400820, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=16011508}) = -1 ETIMEDOUT (Tempo esgotado para conexão)
-nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
-futex(0x3400820, FUTEX_WAIT_PRIVATE, 0, {tv_sec=4, tv_nsec=692965126}) = -1 ETIMEDOUT (Tempo esgotado para conexão)
-nanosleep({tv_sec=0, tv_nsec=10000000}, NULL) = 0
-futex(0x3400820, FUTEX_WAIT_PRIVATE, 0, {tv_sec=4, tv_nsec=989622704} <detached ...>
