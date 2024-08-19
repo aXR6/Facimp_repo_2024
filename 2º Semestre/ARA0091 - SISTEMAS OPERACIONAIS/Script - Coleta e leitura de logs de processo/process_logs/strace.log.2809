@@ -1,0 +1,19 @@
+futex(0xc000580148, FUTEX_WAIT_PRIVATE, 0, NULL) = 0
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+futex(0xc000580548, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0xc000580148, FUTEX_WAIT_PRIVATE, 0, NULL) = 0
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+epoll_pwait(4, [], 128, 25, NULL, 0)    = 0
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+epoll_pwait(4, [], 128, 1, NULL, 0)     = 0
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+futex(0xc000636548, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+epoll_pwait(4, [{events=EPOLLIN, data={u32=54724296, u64=54724296}}], 128, 139971, NULL, 0) = 1
+read(5, "\0", 16)                       = 1
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+epoll_pwait(4, [], 128, 4702, NULL, 0)  = 0
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+futex(0xc000636548, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(4, [], 128, 0, NULL, 0)     = 0
+epoll_pwait(4,  <detached ...>

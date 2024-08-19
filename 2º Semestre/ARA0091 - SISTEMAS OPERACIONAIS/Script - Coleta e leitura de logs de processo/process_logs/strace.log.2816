@@ -1,0 +1,1 @@
+futex(0xc0006ae148, FUTEX_WAIT_PRIVATE, 0, NULL <detached ...>
