@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"  # Porta para o acesso HTTP
+      - "8080:8080"  # Porta para a interface web do Traefik
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    networks:
+      graylog_network:
+        ipv4_address: 192.168.10.2
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:6.0.5
+    container_name: mongo
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      graylog_network:
+        ipv4_address: 192.168.10.3
+    restart: unless-stopped
+    ports:
+      - "27017:27017" # Porta do MongoDB
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.11
+    container_name: elasticsearch
+    environment:
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+      - "discovery.type=single-node"
+      - "bootstrap.memory_lock=true"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    networks:
+      graylog_network:
+        ipv4_address: 192.168.10.4
+    restart: unless-stopped
+    ports:
+      - "9200:9200" # Porta do Elasticsearch
+
+  graylog:
+    image: graylog/graylog:6.0.5
+    container_name: graylog
+    environment:
+      - GRAYLOG_PASSWORD_SECRET=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+      - GRAYLOG_ROOT_PASSWORD_SHA2=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+      - GRAYLOG_ROOT_USERNAME=admin
+      - GRAYLOG_ROOT_PASSWORD=YourSecurePassword123
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.168.10.5:9000/
+      - GRAYLOG_ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - GRAYLOG_MONGODB_URI=mongodb://192.168.10.3:27017/graylog
+    entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 -- /docker-entrypoint.sh
+    networks:
+      graylog_network:
+        ipv4_address: 192.168.10.5
+    depends_on:
+      - mongodb
+      - elasticsearch
+    ports:
+      - "9000:9000"  # Porta da interface web do Graylog
+      - "1514:1514"
+      - "1514:1514/udp"
+      - "12201:12201"
+      - "12201:12201/udp"
+    volumes:
+      - graylog_data:/usr/share/graylog/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.graylog.rule=Host(`192.7.0.32`)"
+      - "traefik.http.services.graylog.loadbalancer.server.port=9000"
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
+  es_data:
+  graylog_data:
+
+networks:
+  graylog_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24

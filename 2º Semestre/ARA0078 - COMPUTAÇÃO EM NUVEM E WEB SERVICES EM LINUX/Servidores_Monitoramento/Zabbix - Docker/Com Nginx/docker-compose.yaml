@@ -1,0 +1,104 @@
+version: '3.8'
+
+services:
+  postgres-server:
+    image: postgres:16-alpine
+    container_name: postgres-server
+    environment:
+      POSTGRES_USER: zabbix
+      POSTGRES_PASSWORD: zabbix_pwd
+      POSTGRES_DB: zabbix
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      zabbix-net:
+        ipv4_address: 172.20.240.5
+    restart: unless-stopped
+
+  zabbix-snmptraps:
+    image: zabbix/zabbix-snmptraps:alpine-7.0-latest
+    container_name: zabbix-snmptraps
+    volumes:
+      - /zbx_instance/snmptraps:/var/lib/zabbix/snmptraps:rw
+      - /var/lib/zabbix/mibs:/usr/share/snmp/mibs:ro
+    networks:
+      zabbix-net:
+        ipv4_address: 172.20.240.2
+    ports:
+      - "162:1162/udp"
+    restart: unless-stopped
+
+  zabbix-server-pgsql:
+    image: zabbix/zabbix-server-pgsql:alpine-7.0-latest
+    container_name: zabbix-server-pgsql
+    environment:
+      DB_SERVER_HOST: postgres-server
+      POSTGRES_USER: zabbix
+      POSTGRES_PASSWORD: zabbix_pwd
+      POSTGRES_DB: zabbix
+      ZBX_ENABLE_SNMP_TRAPS: "true"
+    volumes:
+      - zabbix-server-etc:/etc/zabbix
+      - zabbix-server-lib:/var/lib/zabbix
+      - zabbix-server-logs:/var/log/zabbix
+    networks:
+      zabbix-net:
+        ipv4_address: 172.20.240.3
+    ports:
+      - "10051:10051"
+    restart: unless-stopped
+
+  zabbix-web-nginx-pgsql:
+    image: zabbix/zabbix-web-nginx-pgsql:alpine-7.0-latest
+    container_name: zabbix-web-nginx-pgsql
+    environment:
+      ZBX_SERVER_HOST: zabbix-server-pgsql
+      DB_SERVER_HOST: postgres-server
+      POSTGRES_USER: zabbix
+      POSTGRES_PASSWORD: zabbix_pwd
+      POSTGRES_DB: zabbix
+      ZBX_SERVER_NAME: "Zabbix"
+      ZBX_SERVER_PORT: "10051"
+      PHP_TZ: "Europe/Riga"
+    volumes:
+      - zabbix-web-etc:/etc/zabbix
+      - zabbix-web-lib:/var/lib/zabbix
+      - zabbix-web-logs:/var/log/zabbix
+    networks:
+      zabbix-net:
+        ipv4_address: 172.20.240.4
+    restart: unless-stopped
+
+  nginx-proxy:
+    image: nginx:stable-alpine
+    container_name: nginx-proxy
+    networks:
+      zabbix-net:
+        ipv4_address: 172.20.240.6
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - nginx-logs:/var/log/nginx
+    depends_on:
+      - zabbix-web-nginx-pgsql
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  zabbix-server-etc:
+  zabbix-server-lib:
+  zabbix-server-logs:
+  zabbix-web-etc:
+  zabbix-web-lib:
+  zabbix-web-logs:
+  nginx-logs:
+
+networks:
+  zabbix-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+          ip_range: 172.20.240.0/20
