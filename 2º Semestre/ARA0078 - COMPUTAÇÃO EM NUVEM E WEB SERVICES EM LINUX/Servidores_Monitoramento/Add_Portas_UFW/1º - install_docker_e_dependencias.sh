@@ -51,6 +51,20 @@ install_docker() {
     echo "Docker CE instalado e configurado com sucesso."
 }
 
+# Função para instalar e configurar o Portainer
+install_portainer() {
+    echo "Instalando e configurando o Portainer..."
+
+    # Baixar e executar o container do Portainer
+    docker volume create portainer_data
+    docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always \
+        -v /var/run/docker.sock:/var/run/docker.sock \
+        -v portainer_data:/data \
+        portainer/portainer-ce:latest
+
+    echo "Portainer instalado e configurado com sucesso."
+}
+
 # Função para instalar o Docker Compose
 install_docker_compose() {
     echo "Baixando e instalando o Docker Compose..."
@@ -77,13 +91,30 @@ install_python_dependencies() {
     pip3 show requests
 }
 
+# Função para configurar UFW com regras para Docker e Portainer
+configure_ufw() {
+    apt install ufw rsyslog -y
+    ufw enable
+    echo "Configurando UFW para Docker e Portainer..."
+
+    # Adicionar regras para Docker e Portainer
+    ufw allow 2375/tcp  # Docker API
+    ufw allow 2376/tcp  # Docker API com TLS
+    ufw allow 8000/tcp  # Portainer Agent
+    ufw allow 9443/tcp  # Portainer HTTPS
+
+    echo "Regras do UFW configuradas para Docker e Portainer."
+}
+
 # Função principal
 main() {
     setup_docker_repo
     install_docker
+    install_portainer
     install_docker_compose
     install_python_dependencies
-    echo "Instalação do Docker, Docker Compose e dependências Python concluída."
+    configure_ufw
+    echo "Instalação e configuração do Docker, Portainer, Docker Compose e rsyslog concluídas."
 }
 
 # Executar a função principal
