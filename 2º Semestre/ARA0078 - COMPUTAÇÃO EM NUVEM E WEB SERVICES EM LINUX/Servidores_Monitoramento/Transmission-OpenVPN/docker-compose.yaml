@@ -1,0 +1,101 @@
+version: "3.8"
+
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
+
+services:
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    command:
+      - "--providers.docker=true"
+      - "--entrypoints.web.address=:80"
+      - "--log.level=DEBUG"
+    networks:
+      custom_network:
+        ipv4_address: 192.168.100.2
+    ports:
+      - "80:80"
+      - "8080:8080"  # Porta para a interface web do Traefik
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik/traefik.toml:/etc/traefik/traefik.toml
+    restart: always
+
+  transmission-openvpn:
+    image: haugene/transmission-openvpn:latest
+    container_name: transmission-openvpn
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    environment:
+      - OPENVPN_PROVIDER=CUSTOM
+      - OPENVPN_CONFIG=proton  # Não inclua a extensão .ovpn
+      - OPENVPN_USERNAME=CEJMh5IjjgB6kN6d
+      - OPENVPN_PASSWORD=oIOkmUvC8Tz7wJIrQJmQcf9Wb74Sw7KP
+      - LOCAL_NETWORK=192.168.1.0/24
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - TRANSMISSION_WEB_UI=transmission-web-control
+      - TRANSMISSION_SCRAPE_PAUSED_TORRENTS_ENABLED=false
+      - TRANSMISSION_INCOMPLETE_DIR_ENABLED=true
+      - TRANSMISSION_INCOMPLETE_DIR=/data/incomplete
+      - TRANSMISSION_WATCH_DIR_ENABLED=true
+      - TRANSMISSION_WATCH_DIR=/data/watch
+      - TRANSMISSION_UMASK=002
+      - TRANSMISSION_RPC_AUTHENTICATION_REQUIRED=true
+      - TRANSMISSION_RPC_USERNAME=admin
+      - TRANSMISSION_RPC_PASSWORD=password
+      - TRANSMISSION_RPC_PORT=9091
+      - TRANSMISSION_RPC_WHITELIST=127.0.0.1,192.168.*.*,192.7.0.26
+      - TRANSMISSION_PEER_PORT_RANDOM_ON_START=true
+      - TRANSMISSION_DOWNLOAD_QUEUE_SIZE=5
+      - TRANSMISSION_IDLE_SEEDING_LIMIT_ENABLED=true
+      - TRANSMISSION_IDLE_SEEDING_LIMIT=30
+      - TRANSMISSION_RATIO_LIMIT_ENABLED=true
+      - TRANSMISSION_RATIO_LIMIT=2
+      - TRANSMISSION_RPC_WHITELIST_ENABLED=true
+    volumes:
+      - transmission_config:/config
+      - transmission_downloads:/downloads
+      - transmission_watch:/watch
+      - ./ovpn:/etc/openvpn/custom  # Certifique-se de que o arquivo proton.ovpn está aqui
+    networks:
+      custom_network:
+        ipv4_address: 192.168.100.3
+    restart: always
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.transmission.rule=Host(`192.7.0.26`)"
+      - "traefik.http.routers.transmission.entrypoints=web"
+      - "traefik.http.services.transmission.loadbalancer.server.port=9091"
+
+  vpn-kill-switch:
+    image: kuthz/openvpn-killswitch
+    container_name: vpn-kill-switch
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - INTERFACE=eth0  # Interface de rede que o kill switch vai monitorar
+      - SUBNET=192.168.100.0/24  # Subrede permitida para comunicação interna
+    network_mode: "service:transmission-openvpn"  # Compartilha a rede com o transmission-openvpn
+    restart: always
+
+volumes:
+  transmission_config:
+  transmission_downloads:
+  transmission_watch:
