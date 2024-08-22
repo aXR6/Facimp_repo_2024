@@ -51,16 +51,16 @@ services:
       - "9200:9200" # Porta do Elasticsearch
 
   graylog:
-    image: graylog/graylog:6.0.5
+    image: graylog/graylog:6.0
     container_name: graylog
     environment:
       - GRAYLOG_PASSWORD_SECRET=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
       - GRAYLOG_ROOT_PASSWORD_SHA2=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
       - GRAYLOG_ROOT_USERNAME=admin
-      - GRAYLOG_ROOT_PASSWORD=YourSecurePassword123
-      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.168.10.5:9000/
+      - GRAYLOG_HTTP_BIND_ADDRESS=0.0.0.0:9000
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.7.0.22/
       - GRAYLOG_ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-      - GRAYLOG_MONGODB_URI=mongodb://192.168.10.3:27017/graylog
+      - GRAYLOG_MONGODB_URI=mongodb://mongodb:27017/graylog
     entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 -- /docker-entrypoint.sh
     networks:
       graylog_network:
@@ -78,8 +78,8 @@ services:
       - graylog_data:/usr/share/graylog/data
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.graylog.rule=Host(`192.7.0.32`)"
-      - "traefik.http.services.graylog.loadbalancer.server.port=9000"
+      - "traefik.http.routers.graylog.rule=Host(`192.7.0.22`)" # Regra para o roteamento
+      - "traefik.http.services.graylog.loadbalancer.server.port=9000" # Roteamento para a porta 9000 do Graylog
     restart: unless-stopped
 
 volumes:

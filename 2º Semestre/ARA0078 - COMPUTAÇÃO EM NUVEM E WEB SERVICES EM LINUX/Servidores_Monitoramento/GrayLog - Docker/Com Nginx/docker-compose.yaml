@@ -40,7 +40,7 @@ services:
       - GRAYLOG_ROOT_PASSWORD_SHA2=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
       - GRAYLOG_ROOT_USERNAME=admin
       - GRAYLOG_HTTP_BIND_ADDRESS=0.0.0.0:9000
-      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.7.0.32:9000/
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.7.0.22:9000/
       - GRAYLOG_ELASTICSEARCH_HOSTS=http://192.18.0.3:9200
       - GRAYLOG_MONGODB_URI=mongodb://192.18.0.2:27017/graylog
     entrypoint: /usr/bin/tini -- /docker-entrypoint.sh
