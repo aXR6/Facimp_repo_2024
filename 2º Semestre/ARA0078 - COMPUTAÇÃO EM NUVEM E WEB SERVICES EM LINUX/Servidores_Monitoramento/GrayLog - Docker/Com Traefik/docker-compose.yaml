@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+  sysctl-setup:
+    image: busybox
+    container_name: sysctl-setup
+    command: sysctl -w vm.max_map_count=262144
+    privileged: true
+    deploy:
+      mode: replicated
+      replicas: 1
+
   traefik:
     image: traefik:v2.10
     container_name: traefik
@@ -9,14 +18,21 @@ services:
       - "--providers.docker=true"
       - "--entrypoints.web.address=:80"
     ports:
-      - "80:80"  # Porta para o acesso HTTP
+      - "80:80"      # Porta para o acesso HTTP
       - "8080:8080"  # Porta para a interface web do Traefik
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     networks:
       graylog_network:
         ipv4_address: 192.168.10.2
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    depends_on:
+      - sysctl-setup
 
   mongodb:
     image: mongo:6.0.5
@@ -26,9 +42,16 @@ services:
     networks:
       graylog_network:
         ipv4_address: 192.168.10.3
-    restart: unless-stopped
+    restart: always
     ports:
-      - "27017:27017" # Porta do MongoDB
+      - "27017:27017"  # Porta do MongoDB
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    depends_on:
+      - sysctl-setup
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.11
@@ -46,9 +69,16 @@ services:
     networks:
       graylog_network:
         ipv4_address: 192.168.10.4
-    restart: unless-stopped
+    restart: always
     ports:
-      - "9200:9200" # Porta do Elasticsearch
+      - "9200:9200"  # Porta do Elasticsearch
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    depends_on:
+      - sysctl-setup
 
   graylog:
     image: graylog/graylog:6.0
@@ -58,7 +88,7 @@ services:
       - GRAYLOG_ROOT_PASSWORD_SHA2=a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
       - GRAYLOG_ROOT_USERNAME=admin
       - GRAYLOG_HTTP_BIND_ADDRESS=0.0.0.0:9000
-      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.7.0.22/
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://192.7.0.26/
       - GRAYLOG_ELASTICSEARCH_HOSTS=http://elasticsearch:9200
       - GRAYLOG_MONGODB_URI=mongodb://mongodb:27017/graylog
     entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 -- /docker-entrypoint.sh
@@ -78,9 +108,14 @@ services:
       - graylog_data:/usr/share/graylog/data
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.graylog.rule=Host(`192.7.0.22`)" # Regra para o roteamento
-      - "traefik.http.services.graylog.loadbalancer.server.port=9000" # Roteamento para a porta 9000 do Graylog
-    restart: unless-stopped
+      - "traefik.http.routers.graylog.rule=Host(`192.7.0.26`)"  # Regra para o roteamento
+      - "traefik.http.services.graylog.loadbalancer.server.port=9000"  # Roteamento para a porta 9000 do Graylog
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 volumes:
   mongo_data:

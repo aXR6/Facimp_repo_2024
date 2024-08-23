@@ -8,7 +8,12 @@ services:
       - mongo_data:/data/db
     networks:
       - graylog
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.11
@@ -21,13 +26,20 @@ services:
       memlock:
         soft: -1
         hard: -1
-    networks:
-      - graylog
     volumes:
       - es_data:/usr/share/elasticsearch/data
-    restart: unless-stopped
+    networks:
+      - graylog
     ports:
       - "9200:9200"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - vm.max_map_count=262144  # Necessário para Elasticsearch
 
   graylog:
     image: graylog/graylog:6.0.5
@@ -54,7 +66,12 @@ services:
       - "12201:12201/udp"
     volumes:
       - graylog_data:/usr/share/graylog/data
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 volumes:
   mongo_data:
@@ -64,4 +81,3 @@ volumes:
 networks:
   graylog:
     driver: bridge
-    

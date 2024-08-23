@@ -9,14 +9,22 @@ services:
       - "--providers.docker=true"
       - "--entrypoints.web.address=:80"
     ports:
-      - "80:80"
-      - "8080:8080" # Porta para dashboard do Traefik
+      - "80:80"  # Porta para o acesso HTTP
+      - "8080:8080"  # Porta para o dashboard do Traefik
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
     networks:
-      traefik-net:
-        ipv4_address: 172.21.0.2
-    restart: unless-stopped
+      zabbix-net:
+        ipv4_address: 172.20.240.2
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   postgres-server:
     image: postgres:16-alpine
@@ -31,7 +39,15 @@ services:
     networks:
       zabbix-net:
         ipv4_address: 172.20.240.5
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   zabbix-snmptraps:
     image: zabbix/zabbix-snmptraps:alpine-7.0-latest
@@ -41,10 +57,18 @@ services:
       - /var/lib/zabbix/mibs:/usr/share/snmp/mibs:ro
     networks:
       zabbix-net:
-        ipv4_address: 172.20.240.2
+        ipv4_address: 172.20.240.3
     ports:
       - "162:1162/udp"
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   zabbix-server-pgsql:
     image: zabbix/zabbix-server-pgsql:alpine-7.0-latest
@@ -61,8 +85,18 @@ services:
       - zabbix-server-logs:/var/log/zabbix
     networks:
       zabbix-net:
-        ipv4_address: 172.20.240.3
-    restart: unless-stopped
+        ipv4_address: 172.20.240.4
+    ports:
+      - "10051:10051"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   zabbix-web-nginx-pgsql:
     image: zabbix/zabbix-web-nginx-pgsql:alpine-7.0-latest
@@ -82,27 +116,20 @@ services:
       - zabbix-web-logs:/var/log/zabbix
     networks:
       zabbix-net:
-        ipv4_address: 172.20.240.4
+        ipv4_address: 172.20.240.6
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.zabbix-web.rule=Host(`192.7.0.32`)"
+      - "traefik.http.routers.zabbix-web.rule=Host(`192.7.0.26`)"
       - "traefik.http.services.zabbix-web.loadbalancer.server.port=8080"
-    restart: unless-stopped
-
-  nginx-proxy:
-    image: nginx:stable-alpine
-    container_name: nginx-proxy
-    networks:
-      zabbix-net:
-        ipv4_address: 172.20.240.6
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - nginx-logs:/var/log/nginx
-    depends_on:
-      - zabbix-web-nginx-pgsql
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
 volumes:
   postgres-data:
@@ -112,15 +139,8 @@ volumes:
   zabbix-web-etc:
   zabbix-web-lib:
   zabbix-web-logs:
-  nginx-logs:
 
 networks:
-  traefik-net:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.21.0.0/16
-          ip_range: 172.21.0.0/24
   zabbix-net:
     driver: bridge
     ipam:

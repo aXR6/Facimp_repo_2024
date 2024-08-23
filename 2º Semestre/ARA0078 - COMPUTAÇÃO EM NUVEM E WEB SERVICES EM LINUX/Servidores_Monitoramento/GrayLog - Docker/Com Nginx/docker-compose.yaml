@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+  sysctl-setup:
+    image: busybox
+    container_name: sysctl-setup
+    command: sysctl -w vm.max_map_count=262144
+    privileged: true
+    deploy:
+      mode: replicated
+      replicas: 1
+
   mongodb:
     image: mongo:6.0.5
     container_name: mongo
@@ -10,6 +19,11 @@ services:
     volumes:
       - mongo_data:/data/db
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.11
@@ -28,9 +42,16 @@ services:
     networks:
       graylog_network:
         ipv4_address: 192.18.0.3
+    depends_on:
+      - sysctl-setup  # Garantir que o sysctl-setup seja executado primeiro
     restart: unless-stopped
     ports:
       - "9200:9200"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   graylog:
     image: graylog/graylog:6.0
@@ -59,6 +80,11 @@ services:
     volumes:
       - graylog_data:/usr/share/graylog/data
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   nginx:
     image: nginx:latest
@@ -73,6 +99,11 @@ services:
     depends_on:
       - graylog
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 volumes:
   mongo_data:

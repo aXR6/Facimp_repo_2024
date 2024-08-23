@@ -14,7 +14,15 @@ services:
     networks:
       zabbix-net:
         ipv4_address: 172.20.240.5
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   zabbix-snmptraps:
     image: zabbix/zabbix-snmptraps:alpine-7.0-latest
@@ -27,7 +35,15 @@ services:
         ipv4_address: 172.20.240.2
     ports:
       - "162:1162/udp"
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   zabbix-server-pgsql:
     image: zabbix/zabbix-server-pgsql:alpine-7.0-latest
@@ -47,7 +63,15 @@ services:
         ipv4_address: 172.20.240.3
     ports:
       - "10051:10051"
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   zabbix-web-nginx-pgsql:
     image: zabbix/zabbix-web-nginx-pgsql:alpine-7.0-latest
@@ -68,7 +92,15 @@ services:
     networks:
       zabbix-net:
         ipv4_address: 172.20.240.4
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
   nginx-proxy:
     image: nginx:stable-alpine
@@ -83,7 +115,15 @@ services:
       - nginx-logs:/var/log/nginx
     depends_on:
       - zabbix-web-nginx-pgsql
-    restart: unless-stopped
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv4.ip_forward=1
 
 volumes:
   postgres-data:
