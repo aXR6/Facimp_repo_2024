@@ -158,7 +158,7 @@ show_menu() {
             # Verifica se o processo está em execução
             if ! ps -p $PID > /dev/null; then
                 echo "O processo com PID $PID não está em execução."
-                exit 1
+                exit ssos e sua1
             fi
 
             # Inicia o monitoramento do processo

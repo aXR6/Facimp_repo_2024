@@ -1,0 +1,748 @@
+Iniciando monitoramento detalhado do processo com PID 23752...
+Monitoramento será feito por 50 segundos.
+----------------------------------------------------
+Momento: 2024-08-26 20:05:12
+Estado atual do processo: Dormindo (sono interruptível) (Código: S+)
+Espaço de memória ocupado (PCB): 5464K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:05:14
+Estado atual do processo: Dormindo (sono interruptível) (Código: S+)
+Espaço de memória ocupado (PCB): 5464K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:05:15
+Estado atual do processo: Parado (traced ou suspendido) (Código: T+)
+Espaço de memória ocupado (PCB): 5464K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:05:16
+Estado atual do processo: Parado (traced ou suspendido) (Código: T+)
+Espaço de memória ocupado (PCB): 5464K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:05:17
+Estado atual do processo: Dormindo (sono interruptível) (Código: S+)
+Espaço de memória ocupado (PCB): 5464K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:05:18
+Estado atual do processo: Dormindo (sono interruptível) (Código: S+)
+Espaço de memória ocupado (PCB): 5464K
+Utilização de CPU:  0.0%
+Processo com PID 23752 foi finalizado.
+Monitoramento do processo concluído.
+Iniciando monitoramento detalhado do processo com PID 6...
+Monitoramento será feito por 50 segundos.
+----------------------------------------------------
+Momento: 2024-08-26 20:08:49
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:50
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:51
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:52
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:53
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:54
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:55
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:56
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:57
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:58
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:08:59
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:00
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:02
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:03
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:04
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:05
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:06
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:07
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:08
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:09
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:10
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:11
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:12
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:13
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:14
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:15
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:16
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:17
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:18
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:19
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:20
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:21
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:22
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:23
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:24
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:25
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:26
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:27
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:28
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:29
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:31
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:32
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:33
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:34
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:35
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:36
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:37
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:09:38
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+Tempo limite de monitoramento (50 segundos) atingido.
+Monitoramento do processo concluído.
+Iniciando monitoramento detalhado do processo com PID 100...
+Monitoramento será feito por 50 segundos.
+----------------------------------------------------
+Momento: 2024-08-26 20:10:43
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:10:44
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:10:45
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:10:46
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I<)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+Iniciando monitoramento detalhado do processo com PID 122...
+Monitoramento será feito por 50 segundos.
+----------------------------------------------------
+Momento: 2024-08-26 20:11:07
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:08
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:09
+Estado atual do processo: Inativo (Idle kernel thread) (Código: I)
+Espaço de memória ocupado (PCB): 0K
+Utilização de CPU:  0.0%
+Iniciando monitoramento detalhado do processo com PID 14110...
+Monitoramento será feito por 50 segundos.
+----------------------------------------------------
+Momento: 2024-08-26 20:11:28
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:29
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:30
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:31
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:32
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:33
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:34
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:36
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:37
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:38
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:39
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:40
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:41
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.1%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:42
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.1%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:43
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:44
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729616K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:45
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:46
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:47
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:48
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:49
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:50
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:51
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:52
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:53
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:54
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:55
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:56
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:57
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:58
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:11:59
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:00
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:01
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:03
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:04
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:05
+Estado atual do processo: Dormindo (sono interruptível) (Código: Ssl)
+Espaço de memória ocupado (PCB): 729796K
+Utilização de CPU:  0.2%
+Iniciando monitoramento detalhado do processo com PID 2880...
+Monitoramento será feito por 50 segundos.
+----------------------------------------------------
+Momento: 2024-08-26 20:12:10
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:11
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:12
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:13
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:14
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:15
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:16
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:17
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:18
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113596K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:19
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113660K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:20
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:21
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:22
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:23
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:24
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:25
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:26
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:27
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:28
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:29
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:30
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:31
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:32
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:33
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:34
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:35
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:37
+Estado atual do processo: Executando (Código: Rl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:38
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:39
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:40
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:41
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:42
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:43
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:44
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:45
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:46
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:47
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113724K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:48
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113788K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:49
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:50
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:51
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:52
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:53
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:54
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:55
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:56
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:57
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:58
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+----------------------------------------------------
+Momento: 2024-08-26 20:12:59
+Estado atual do processo: Dormindo (sono interruptível) (Código: Sl+)
+Espaço de memória ocupado (PCB): 27113852K
+Utilização de CPU:  1.7%
+Tempo limite de monitoramento (50 segundos) atingido.
+Monitoramento do processo concluído.

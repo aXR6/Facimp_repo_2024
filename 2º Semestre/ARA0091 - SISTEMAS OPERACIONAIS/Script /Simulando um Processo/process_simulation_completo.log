@@ -1,0 +1,18 @@
+2024-08-26 19:43:50 - Script de simulação de processos iniciado.
+2024-08-26 19:44:01 - Opção escolhida no menu principal: 1
+2024-08-26 19:44:09 - Iniciando simulação do processo 'PROCESSO'
+2024-08-26 19:44:09 - Processo 'PROCESSO' criado. Estado: Novo
+2024-08-26 19:44:10 - Processo 'PROCESSO' está pronto para execução. Estado: Pronto
+2024-08-26 19:44:10 - Estado Atual do Processo: Pronto\nPCB (Posição em Memória): 1304\nPosição no Processador (CPU): Aguardando CPU
+2024-08-26 19:45:54 - Opção escolhida: 2
+2024-08-26 19:45:54 - Processo 'PROCESSO' está aguardando um evento. Estado: Espera
+2024-08-26 19:45:54 - Estado Atual do Processo: Espera\nPCB (Posição em Memória): 1304\nPosição no Processador (CPU): Removido da CPU - Aguardando I/O
+2024-08-26 19:47:01 - Opção escolhida: 1
+2024-08-26 19:47:01 - Processo 'PROCESSO' está pronto para execução. Estado: Pronto
+2024-08-26 19:47:01 - Estado Atual do Processo: Pronto\nPCB (Posição em Memória): 1688\nPosição no Processador (CPU): Aguardando CPU
+2024-08-26 19:48:41 - Opção escolhida: 3
+2024-08-26 19:48:41 - Processo 'PROCESSO' finalizado. Estado: Finalizado
+2024-08-26 19:48:41 - Estado Atual do Processo: Finalizado\nPCB (Posição em Memória): 1688\nPosição no Processador (CPU): Liberado da CPU
+2024-08-26 19:48:41 - Processo 'PROCESSO' encerrou sua execução e liberou recursos.
+2024-08-26 20:04:38 - Script de simulação de processos iniciado.
+2024-08-26 20:04:42 - Opção escolhida no menu principal: 1

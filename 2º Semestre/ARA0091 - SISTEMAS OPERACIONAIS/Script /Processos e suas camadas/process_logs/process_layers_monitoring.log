@@ -1,0 +1,373 @@
+===================================================
+Monitoramento e Simulação de Processos - Início em 2024-08-26 20:03:39
+===================================================
+----------------------------------------------------
+Ciclo de Monitoramento - 2024-08-26 20:03:41
+----------------------------------------------------
+PID: 1 - Processo: systemd - Camada Atual: Camada de Gerenciamento de Sistema
+PID: 2 - Processo: kthreadd - Camada Atual: Camada de Aplicação Geral
+PID: 3 - Processo: rcu_gp - Camada Atual: Camada de Kernel
+PID: 4 - Processo: rcu_par_gp - Camada Atual: Camada de Kernel
+PID: 5 - Processo: slub_flushwq - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 6 - Processo: netns - Camada Atual: Camada de Aplicação Geral
+PID: 8 - Processo: kworker/0:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 10 - Processo: mm_percpu_wq - Camada Atual: Camada de Aplicação Geral
+PID: 11 - Processo: rcu_tasks_kthread - Camada Atual: Camada de Kernel
+PID: 12 - Processo: rcu_tasks_rude_kthread - Camada Atual: Camada de Kernel
+PID: 13 - Processo: rcu_tasks_trace_kthread - Camada Atual: Camada de Kernel
+PID: 14 - Processo: ksoftirqd/0 - Camada Atual: Camada de Kernel
+PID: 15 - Processo: rcu_preempt - Camada Atual: Camada de Kernel
+PID: 16 - Processo: migration/0 - Camada Atual: Camada de Aplicação Geral
+PID: 17 - Processo: cpuhp/0 - Camada Atual: Camada de Aplicação Geral
+PID: 18 - Processo: cpuhp/1 - Camada Atual: Camada de Aplicação Geral
+PID: 19 - Processo: migration/1 - Camada Atual: Camada de Aplicação Geral
+PID: 20 - Processo: ksoftirqd/1 - Camada Atual: Camada de Kernel
+PID: 22 - Processo: kworker/1:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 23 - Processo: cpuhp/2 - Camada Atual: Camada de Aplicação Geral
+PID: 24 - Processo: migration/2 - Camada Atual: Camada de Aplicação Geral
+PID: 25 - Processo: ksoftirqd/2 - Camada Atual: Camada de Kernel
+PID: 27 - Processo: kworker/2:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 28 - Processo: cpuhp/3 - Camada Atual: Camada de Aplicação Geral
+PID: 29 - Processo: migration/3 - Camada Atual: Camada de Aplicação Geral
+PID: 30 - Processo: ksoftirqd/3 - Camada Atual: Camada de Kernel
+PID: 31 - Processo: kworker/3:0-cgroup_destroy - Camada Atual: Camada de Kernel
+PID: 32 - Processo: kworker/3:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 33 - Processo: cpuhp/4 - Camada Atual: Camada de Aplicação Geral
+PID: 34 - Processo: migration/4 - Camada Atual: Camada de Aplicação Geral
+PID: 35 - Processo: ksoftirqd/4 - Camada Atual: Camada de Kernel
+PID: 37 - Processo: kworker/4:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 38 - Processo: cpuhp/5 - Camada Atual: Camada de Aplicação Geral
+PID: 39 - Processo: migration/5 - Camada Atual: Camada de Aplicação Geral
+PID: 40 - Processo: ksoftirqd/5 - Camada Atual: Camada de Kernel
+PID: 42 - Processo: kworker/5:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 43 - Processo: cpuhp/6 - Camada Atual: Camada de Aplicação Geral
+PID: 44 - Processo: migration/6 - Camada Atual: Camada de Aplicação Geral
+PID: 45 - Processo: ksoftirqd/6 - Camada Atual: Camada de Kernel
+PID: 47 - Processo: kworker/6:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 48 - Processo: cpuhp/7 - Camada Atual: Camada de Aplicação Geral
+PID: 49 - Processo: migration/7 - Camada Atual: Camada de Aplicação Geral
+PID: 50 - Processo: ksoftirqd/7 - Camada Atual: Camada de Kernel
+PID: 52 - Processo: kworker/7:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 53 - Processo: cpuhp/8 - Camada Atual: Camada de Aplicação Geral
+PID: 54 - Processo: migration/8 - Camada Atual: Camada de Aplicação Geral
+PID: 55 - Processo: ksoftirqd/8 - Camada Atual: Camada de Kernel
+PID: 57 - Processo: kworker/8:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 58 - Processo: cpuhp/9 - Camada Atual: Camada de Aplicação Geral
+PID: 59 - Processo: migration/9 - Camada Atual: Camada de Aplicação Geral
+PID: 60 - Processo: ksoftirqd/9 - Camada Atual: Camada de Kernel
+PID: 62 - Processo: kworker/9:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 63 - Processo: cpuhp/10 - Camada Atual: Camada de Aplicação Geral
+PID: 64 - Processo: migration/10 - Camada Atual: Camada de Aplicação Geral
+PID: 65 - Processo: ksoftirqd/10 - Camada Atual: Camada de Kernel
+PID: 67 - Processo: kworker/10:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 68 - Processo: cpuhp/11 - Camada Atual: Camada de Aplicação Geral
+PID: 69 - Processo: migration/11 - Camada Atual: Camada de Aplicação Geral
+PID: 70 - Processo: ksoftirqd/11 - Camada Atual: Camada de Kernel
+PID: 72 - Processo: kworker/11:0H-events_highpri - Camada Atual: Camada de Kernel
+PID: 78 - Processo: kworker/u24:5-btrfs-endio-write - Camada Atual: Camada de Kernel
+PID: 80 - Processo: kworker/u24:7-btrfs-endio-write - Camada Atual: Camada de Kernel
+PID: 85 - Processo: kdevtmpfs - Camada Atual: Camada de Aplicação Geral
+PID: 86 - Processo: inet_frag_wq - Camada Atual: Camada de Aplicação Geral
+PID: 87 - Processo: kauditd - Camada Atual: Camada de Aplicação Geral
+PID: 88 - Processo: kworker/0:1-events - Camada Atual: Camada de Kernel
+PID: 89 - Processo: kworker/1:1-events - Camada Atual: Camada de Kernel
+PID: 90 - Processo: khungtaskd - Camada Atual: Camada de Aplicação Geral
+PID: 91 - Processo: oom_reaper - Camada Atual: Camada de Aplicação Geral
+PID: 92 - Processo: writeback - Camada Atual: Camada de Aplicação Geral
+PID: 93 - Processo: kcompactd0 - Camada Atual: Camada de Aplicação Geral
+PID: 94 - Processo: ksmd - Camada Atual: Camada de Aplicação Geral
+PID: 95 - Processo: khugepaged - Camada Atual: Camada de Aplicação Geral
+PID: 96 - Processo: kintegrityd - Camada Atual: Camada de Aplicação Geral
+PID: 97 - Processo: kblockd - Camada Atual: Camada de Aplicação Geral
+PID: 98 - Processo: blkcg_punt_bio - Camada Atual: Camada de Aplicação Geral
+PID: 99 - Processo: tpm_dev_wq - Camada Atual: Camada de Aplicação Geral
+PID: 100 - Processo: edac-poller - Camada Atual: Camada de Aplicação Geral
+PID: 102 - Processo: devfreq_wq - Camada Atual: Camada de Aplicação Geral
+PID: 104 - Processo: kworker/8:1-cgroup_destroy - Camada Atual: Camada de Kernel
+PID: 105 - Processo: kworker/0:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 106 - Processo: ksgxd - Camada Atual: Camada de Aplicação Geral
+PID: 107 - Processo: kswapd0 - Camada Atual: Camada de Aplicação Geral
+PID: 109 - Processo: kworker/2:1-events - Camada Atual: Camada de Kernel
+PID: 114 - Processo: kthrotld - Camada Atual: Camada de Aplicação Geral
+PID: 118 - Processo: kworker/6:1-events - Camada Atual: Camada de Kernel
+PID: 121 - Processo: kworker/10:1-events - Camada Atual: Camada de Kernel
+PID: 122 - Processo: kworker/11:1-mm_percpu_wq - Camada Atual: Camada de Kernel
+PID: 123 - Processo: acpi_thermal_pm - Camada Atual: Camada de Aplicação Geral
+PID: 124 - Processo: hwrng - Camada Atual: Camada de Aplicação Geral
+PID: 125 - Processo: mld - Camada Atual: Camada de Aplicação Geral
+PID: 126 - Processo: ipv6_addrconf - Camada Atual: Camada de Aplicação Geral
+PID: 131 - Processo: kstrp - Camada Atual: Camada de Aplicação Geral
+PID: 136 - Processo: zswap-shrink - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 181 - Processo: kworker/3:1H-kblockd - Camada Atual: Camada de Kernel
+PID: 194 - Processo: kworker/4:1H-kblockd - Camada Atual: Camada de Kernel
+PID: 195 - Processo: kworker/8:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 196 - Processo: kworker/11:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 197 - Processo: kworker/7:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 198 - Processo: kworker/2:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 199 - Processo: kworker/1:1H-kblockd - Camada Atual: Camada de Kernel
+PID: 200 - Processo: kworker/9:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 201 - Processo: kworker/6:1H-kblockd - Camada Atual: Camada de Kernel
+PID: 203 - Processo: kworker/5:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 226 - Processo: kworker/10:1H-events_highpri - Camada Atual: Camada de Kernel
+PID: 241 - Processo: kworker/2:3-events - Camada Atual: Camada de Kernel
+PID: 245 - Processo: nvme-wq - Camada Atual: Camada de Aplicação Geral
+PID: 246 - Processo: nvme-reset-wq - Camada Atual: Camada de Aplicação Geral
+PID: 247 - Processo: nvme-delete-wq - Camada Atual: Camada de Aplicação Geral
+PID: 249 - Processo: irq/82-DELL0A64:00 - Camada Atual: Camada de Aplicação Geral
+PID: 251 - Processo: kworker/10:2-events - Camada Atual: Camada de Kernel
+PID: 252 - Processo: card0-crtc0 - Camada Atual: Camada de Aplicação Geral
+PID: 253 - Processo: card0-crtc1 - Camada Atual: Camada de Aplicação Geral
+PID: 254 - Processo: card0-crtc2 - Camada Atual: Camada de Aplicação Geral
+PID: 305 - Processo: btrfs-worker - Camada Atual: Camada de Aplicação Geral
+PID: 306 - Processo: btrfs-worker-hi - Camada Atual: Camada de Aplicação Geral
+PID: 307 - Processo: btrfs-delalloc - Camada Atual: Camada de Aplicação Geral
+PID: 308 - Processo: btrfs-flush_del - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 309 - Processo: btrfs-cache - Camada Atual: Camada de Aplicação Geral
+PID: 310 - Processo: btrfs-fixup - Camada Atual: Camada de Aplicação Geral
+PID: 311 - Processo: btrfs-endio - Camada Atual: Camada de Aplicação Geral
+PID: 312 - Processo: btrfs-endio-met - Camada Atual: Camada de Aplicação Geral
+PID: 313 - Processo: btrfs-endio-rai - Camada Atual: Camada de Aplicação Geral
+PID: 314 - Processo: btrfs-rmw - Camada Atual: Camada de Aplicação Geral
+PID: 315 - Processo: btrfs-endio-wri - Camada Atual: Camada de Aplicação Geral
+PID: 316 - Processo: btrfs-compresse - Camada Atual: Camada de Aplicação Geral
+PID: 317 - Processo: btrfs-freespace - Camada Atual: Camada de Aplicação Geral
+PID: 318 - Processo: btrfs-delayed-m - Camada Atual: Camada de Aplicação Geral
+PID: 319 - Processo: btrfs-qgroup-re - Camada Atual: Camada de Aplicação Geral
+PID: 320 - Processo: btrfs-cleaner - Camada Atual: Camada de Aplicação Geral
+PID: 321 - Processo: btrfs-transaction - Camada Atual: Camada de Aplicação Geral
+PID: 382 - Processo: systemd-journal - Camada Atual: Camada de Aplicação Geral
+PID: 385 - Processo: kworker/0:2-events - Camada Atual: Camada de Kernel
+PID: 424 - Processo: kworker/u24:13-events_unbound - Camada Atual: Camada de Kernel
+PID: 428 - Processo: systemd-udevd - Camada Atual: Camada de Aplicação Geral
+PID: 510 - Processo: watchdogd - Camada Atual: Camada de Aplicação Geral
+PID: 512 - Processo: irq/151-mei_me - Camada Atual: Camada de Aplicação Geral
+PID: 562 - Processo: cfg80211 - Camada Atual: Camada de Aplicação Geral
+PID: 606 - Processo: irq/152-iwlwifi:default_queue - Camada Atual: Camada de Aplicação Geral
+PID: 607 - Processo: irq/153-iwlwifi:queue_1 - Camada Atual: Camada de Aplicação Geral
+PID: 608 - Processo: irq/154-iwlwifi:queue_2 - Camada Atual: Camada de Aplicação Geral
+PID: 609 - Processo: irq/155-iwlwifi:queue_3 - Camada Atual: Camada de Aplicação Geral
+PID: 610 - Processo: irq/156-iwlwifi:queue_4 - Camada Atual: Camada de Aplicação Geral
+PID: 611 - Processo: irq/157-iwlwifi:queue_5 - Camada Atual: Camada de Aplicação Geral
+PID: 612 - Processo: irq/158-iwlwifi:queue_6 - Camada Atual: Camada de Aplicação Geral
+PID: 613 - Processo: irq/159-iwlwifi:queue_7 - Camada Atual: Camada de Aplicação Geral
+PID: 614 - Processo: irq/160-iwlwifi:queue_8 - Camada Atual: Camada de Aplicação Geral
+PID: 615 - Processo: irq/161-iwlwifi:queue_9 - Camada Atual: Camada de Aplicação Geral
+PID: 616 - Processo: irq/162-iwlwifi:queue_10 - Camada Atual: Camada de Aplicação Geral
+PID: 617 - Processo: irq/163-iwlwifi:queue_11 - Camada Atual: Camada de Aplicação Geral
+PID: 618 - Processo: irq/164-iwlwifi:queue_12 - Camada Atual: Camada de Aplicação Geral
+PID: 619 - Processo: irq/165-iwlwifi:exception - Camada Atual: Camada de Aplicação Geral
+PID: 638 - Processo: irq/166-AudioDSP - Camada Atual: Camada de Aplicação Geral
+PID: 644 - Processo: kworker/4:2-inet_frag_wq - Camada Atual: Camada de Kernel
+PID: 651 - Processo: kworker/u25:1-i915_flip - Camada Atual: Camada de Kernel
+PID: 656 - Processo: nv_queue - Camada Atual: Camada de Aplicação Geral
+PID: 657 - Processo: nv_queue - Camada Atual: Camada de Aplicação Geral
+PID: 757 - Processo: cryptd - Camada Atual: Camada de Aplicação Geral
+PID: 822 - Processo: nvidia-modeset/kthread_q - Camada Atual: Camada de Aplicação Geral
+PID: 823 - Processo: nvidia-modeset/deferred_close_kthread_q - Camada Atual: Camada de Aplicação Geral
+PID: 842 - Processo: kworker/8:3-events - Camada Atual: Camada de Kernel
+PID: 889 - Processo: accounts-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 898 - Processo: avahi-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 899 - Processo: bluetoothd - Camada Atual: Camada de Aplicação Geral
+PID: 901 - Processo: cron - Camada Atual: Camada de Aplicação Geral
+PID: 902 - Processo: dbus-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 906 - Processo: low-memory-moni - Camada Atual: Camada de Aplicação Geral
+PID: 915 - Processo: avahi-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 917 - Processo: polkitd - Camada Atual: Camada de Aplicação Geral
+PID: 919 - Processo: power-profiles- - Camada Atual: Camada de Aplicação Geral
+PID: 921 - Processo: rsyslogd - Camada Atual: Camada de Aplicação Geral
+PID: 922 - Processo: snapd - Camada Atual: Camada de Aplicação Geral
+PID: 923 - Processo: switcheroo-cont - Camada Atual: Camada de Aplicação Geral
+PID: 924 - Processo: systemd-logind - Camada Atual: Camada de Aplicação Geral
+PID: 929 - Processo: udisksd - Camada Atual: Camada de Aplicação Geral
+PID: 935 - Processo: nvidia-persiste - Camada Atual: Camada de Aplicação Geral
+PID: 985 - Processo: psimon - Camada Atual: Camada de Aplicação Geral
+PID: 996 - Processo: NetworkManager - Camada Atual: Camada de Aplicação Geral
+PID: 997 - Processo: wpa_supplicant - Camada Atual: Camada de Aplicação Geral
+PID: 1029 - Processo: vmware-usbarbit - Camada Atual: Camada de Aplicação Geral
+PID: 1036 - Processo: ModemManager - Camada Atual: Camada de Aplicação Geral
+PID: 1058 - Processo: irq/167-nvidia - Camada Atual: Camada de Aplicação Geral
+PID: 1059 - Processo: nvidia - Camada Atual: Camada de Aplicação Geral
+PID: 1060 - Processo: nv_queue - Camada Atual: Camada de Aplicação Geral
+PID: 1117 - Processo: cupsd - Camada Atual: Camada de Aplicação Geral
+PID: 1126 - Processo: containerd - Camada Atual: Camada de Aplicação Geral
+PID: 1128 - Processo: anydesk - Camada Atual: Camada de Aplicação Geral
+PID: 1142 - Processo: sshd - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 1197 - Processo: gdm3 - Camada Atual: Camada de Aplicação Geral
+PID: 1224 - Processo: postgres - Camada Atual: Camada de Aplicação Geral
+PID: 1254 - Processo: postgres - Camada Atual: Camada de Aplicação Geral
+PID: 1255 - Processo: postgres - Camada Atual: Camada de Aplicação Geral
+PID: 1258 - Processo: postgres - Camada Atual: Camada de Aplicação Geral
+PID: 1259 - Processo: postgres - Camada Atual: Camada de Aplicação Geral
+PID: 1260 - Processo: postgres - Camada Atual: Camada de Aplicação Geral
+PID: 1261 - Processo: rtkit-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 1317 - Processo: apache2 - Camada Atual: Camada de Aplicação Geral
+PID: 1358 - Processo: apache2 - Camada Atual: Camada de Aplicação Geral
+PID: 1359 - Processo: apache2 - Camada Atual: Camada de Aplicação Geral
+PID: 1360 - Processo: apache2 - Camada Atual: Camada de Aplicação Geral
+PID: 1361 - Processo: apache2 - Camada Atual: Camada de Aplicação Geral
+PID: 1363 - Processo: apache2 - Camada Atual: Camada de Aplicação Geral
+PID: 1468 - Processo: upowerd - Camada Atual: Camada de Aplicação Geral
+PID: 1477 - Processo: krfcommd - Camada Atual: Camada de Aplicação Geral
+PID: 1640 - Processo: geoclue - Camada Atual: Camada de Aplicação Geral
+PID: 1659 - Processo: colord - Camada Atual: Camada de Aplicação Geral
+PID: 2066 - Processo: cups-browsed - Camada Atual: Camada de Aplicação Geral
+PID: 2067 - Processo: dockerd - Camada Atual: Camada de Aplicação Geral
+PID: 2083 - Processo: tor - Camada Atual: Camada de Aplicação Geral
+PID: 2165 - Processo: vmnet-bridge - Camada Atual: Camada de Aplicação Geral
+PID: 2487 - Processo: vmnet-netifup - Camada Atual: Camada de Aplicação Geral
+PID: 2526 - Processo: vmnet-dhcpd - Camada Atual: Camada de Aplicação Geral
+PID: 2530 - Processo: vmnet-natd - Camada Atual: Camada de Aplicação Geral
+PID: 2535 - Processo: vmnet-netifup - Camada Atual: Camada de Aplicação Geral
+PID: 2554 - Processo: vmnet-dhcpd - Camada Atual: Camada de Aplicação Geral
+PID: 2618 - Processo: vmware-authdlau - Camada Atual: Camada de Aplicação Geral
+PID: 2743 - Processo: gdm-session-wor - Camada Atual: Camada de Aplicação Geral
+PID: 2760 - Processo: systemd - Camada Atual: Camada de Gerenciamento de Sistema
+PID: 2762 - Processo: (sd-pam) - Camada Atual: Camada de Aplicação Geral
+PID: 2795 - Processo: pipewire - Camada Atual: Camada de Aplicação Geral
+PID: 2797 - Processo: wireplumber - Camada Atual: Camada de Aplicação Geral
+PID: 2799 - Processo: pipewire-pulse - Camada Atual: Camada de Aplicação Geral
+PID: 2802 - Processo: gnome-keyring-d - Camada Atual: Camada de Aplicação Geral
+PID: 2804 - Processo: dbus-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 2810 - Processo: gvfsd - Camada Atual: Camada de Aplicação Geral
+PID: 2815 - Processo: gvfsd-fuse - Camada Atual: Camada de Aplicação Geral
+PID: 2866 - Processo: tracker-miner-f - Camada Atual: Camada de Aplicação Geral
+PID: 2871 - Processo: gvfs-udisks2-vo - Camada Atual: Camada de Aplicação Geral
+PID: 2875 - Processo: gdm-x-session - Camada Atual: Camada de Aplicação Geral
+PID: 2880 - Processo: Xorg - Camada Atual: Camada de Interface Gráfica (GUI)
+PID: 2883 - Processo: gvfs-mtp-volume - Camada Atual: Camada de Aplicação Geral
+PID: 2887 - Processo: gvfs-gphoto2-vo - Camada Atual: Camada de Aplicação Geral
+PID: 2891 - Processo: gvfs-goa-volume - Camada Atual: Camada de Aplicação Geral
+PID: 2895 - Processo: goa-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 2902 - Processo: goa-identity-se - Camada Atual: Camada de Aplicação Geral
+PID: 2908 - Processo: gvfs-afc-volume - Camada Atual: Camada de Aplicação Geral
+PID: 2926 - Processo: xdg-permission- - Camada Atual: Camada de Aplicação Geral
+PID: 2946 - Processo: gnome-session-b - Camada Atual: Camada de Aplicação Geral
+PID: 2998 - Processo: ssh-agent - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 3029 - Processo: at-spi-bus-laun - Camada Atual: Camada de Aplicação Geral
+PID: 3035 - Processo: dbus-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 3051 - Processo: gcr-ssh-agent - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 3052 - Processo: gnome-session-c - Camada Atual: Camada de Aplicação Geral
+PID: 3060 - Processo: gnome-session-b - Camada Atual: Camada de Aplicação Geral
+PID: 3077 - Processo: gnome-shell - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 3133 - Processo: gnome-shell-cal - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 3140 - Processo: evolution-sourc - Camada Atual: Camada de Aplicação Geral
+PID: 3194 - Processo: gvfsd-metadata - Camada Atual: Camada de Aplicação Geral
+PID: 3196 - Processo: gjs - Camada Atual: Camada de Aplicação Geral
+PID: 3198 - Processo: at-spi2-registr - Camada Atual: Camada de Aplicação Geral
+PID: 3224 - Processo: evolution-calen - Camada Atual: Camada de Aplicação Geral
+PID: 3228 - Processo: sh - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 3231 - Processo: gsd-a11y-settin - Camada Atual: Camada de Aplicação Geral
+PID: 3233 - Processo: ibus-daemon - Camada Atual: Camada de Aplicação Geral
+PID: 3234 - Processo: gsd-color - Camada Atual: Camada de Aplicação Geral
+PID: 3237 - Processo: gsd-datetime - Camada Atual: Camada de Aplicação Geral
+PID: 3239 - Processo: gsd-housekeepin - Camada Atual: Camada de Aplicação Geral
+PID: 3241 - Processo: gsd-keyboard - Camada Atual: Camada de Aplicação Geral
+PID: 3243 - Processo: gsd-media-keys - Camada Atual: Camada de Aplicação Geral
+PID: 3245 - Processo: gsd-power - Camada Atual: Camada de Aplicação Geral
+PID: 3249 - Processo: gsd-print-notif - Camada Atual: Camada de Aplicação Geral
+PID: 3252 - Processo: gnome-software - Camada Atual: Camada de Aplicação Geral
+PID: 3254 - Processo: gsd-rfkill - Camada Atual: Camada de Aplicação Geral
+PID: 3256 - Processo: gsd-screensaver - Camada Atual: Camada de Aplicação Geral
+PID: 3258 - Processo: anydesk - Camada Atual: Camada de Aplicação Geral
+PID: 3260 - Processo: gsd-sharing - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 3263 - Processo: gsd-smartcard - Camada Atual: Camada de Aplicação Geral
+PID: 3264 - Processo: evolution-alarm - Camada Atual: Camada de Aplicação Geral
+PID: 3265 - Processo: gsd-sound - Camada Atual: Camada de Aplicação Geral
+PID: 3268 - Processo: gsd-usb-protect - Camada Atual: Camada de Aplicação Geral
+PID: 3270 - Processo: gsd-wacom - Camada Atual: Camada de Aplicação Geral
+PID: 3276 - Processo: gsd-xsettings - Camada Atual: Camada de Aplicação Geral
+PID: 3293 - Processo: ibus-dconf - Camada Atual: Camada de Aplicação Geral
+PID: 3295 - Processo: gsd-disk-utilit - Camada Atual: Camada de Aplicação Geral
+PID: 3296 - Processo: ibus-extension- - Camada Atual: Camada de Aplicação Geral
+PID: 3309 - Processo: ibus-x11 - Camada Atual: Camada de Aplicação Geral
+PID: 3331 - Processo: ibus-portal - Camada Atual: Camada de Aplicação Geral
+PID: 3406 - Processo: gjs - Camada Atual: Camada de Aplicação Geral
+PID: 3431 - Processo: evolution-addre - Camada Atual: Camada de Aplicação Geral
+PID: 3483 - Processo: gsd-printer - Camada Atual: Camada de Aplicação Geral
+PID: 3535 - Processo: dconf-service - Camada Atual: Camada de Aplicação Geral
+PID: 3540 - Processo: xdg-desktop-por - Camada Atual: Camada de Aplicação Geral
+PID: 3548 - Processo: xdg-document-po - Camada Atual: Camada de Aplicação Geral
+PID: 3553 - Processo: fusermount3 - Camada Atual: Camada de Aplicação Geral
+PID: 3558 - Processo: xdg-desktop-por - Camada Atual: Camada de Aplicação Geral
+PID: 3628 - Processo: ibus-engine-sim - Camada Atual: Camada de Aplicação Geral
+PID: 3743 - Processo: xdg-desktop-por - Camada Atual: Camada de Aplicação Geral
+PID: 3774 - Processo: fwupd - Camada Atual: Camada de Aplicação Geral
+PID: 4093 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4098 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4099 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4101 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4119 - Processo: chrome_crashpad - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 4135 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4140 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4191 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4232 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4244 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4362 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4376 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4396 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4441 - Processo: bash - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 4588 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 4596 - Processo: code - Camada Atual: Camada de Aplicação Geral
+PID: 7079 - Processo: kworker/7:0-events - Camada Atual: Camada de Kernel
+PID: 7116 - Processo: nautilus - Camada Atual: Camada de Aplicação Geral
+PID: 7119 - Processo: gvfsd-trash - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 7174 - Processo: gvfsd-recent - Camada Atual: Camada de Aplicação Geral
+PID: 7287 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7292 - Processo: cat - Camada Atual: Camada de Aplicação Geral
+PID: 7293 - Processo: cat - Camada Atual: Camada de Aplicação Geral
+PID: 7295 - Processo: chrome_crashpad - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 7297 - Processo: chrome_crashpad - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 7303 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7304 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7306 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7332 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7334 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7344 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7362 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7471 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7488 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7503 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 7657 - Processo: kworker/6:0-cgroup_destroy - Camada Atual: Camada de Kernel
+PID: 9802 - Processo: kworker/u25:0-btrfs-worker-high - Camada Atual: Camada de Kernel
+PID: 10051 - Processo: kworker/5:2-events_freezable - Camada Atual: Camada de Kernel
+PID: 10312 - Processo: bash - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 10435 - Processo: su - Camada Atual: Camada de Aplicação Geral
+PID: 10459 - Processo: kworker/u24:1-btrfs-endio-write - Camada Atual: Camada de Kernel
+PID: 10474 - Processo: bash - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 10745 - Processo: kworker/9:1-events - Camada Atual: Camada de Kernel
+PID: 11335 - Processo: kworker/11:0 - Camada Atual: Camada de Kernel
+PID: 11361 - Processo: kworker/u24:2-btrfs-endio-write - Camada Atual: Camada de Kernel
+PID: 11362 - Processo: kworker/u24:4-btrfs-endio-write - Camada Atual: Camada de Kernel
+PID: 11589 - Processo: kworker/u24:6-blkcg_punt_bio - Camada Atual: Camada de Kernel
+PID: 12904 - Processo: kworker/1:0 - Camada Atual: Camada de Kernel
+PID: 13436 - Processo: kworker/7:1-events - Camada Atual: Camada de Kernel
+PID: 13576 - Processo: kworker/5:1 - Camada Atual: Camada de Kernel
+PID: 14110 - Processo: gnome-terminal- - Camada Atual: Camada de Aplicação Geral
+PID: 14140 - Processo: bash - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 14159 - Processo: su - Camada Atual: Camada de Aplicação Geral
+PID: 14182 - Processo: bash - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 14731 - Processo: kworker/3:1-mm_percpu_wq - Camada Atual: Camada de Kernel
+PID: 14751 - Processo: kworker/9:0-events - Camada Atual: Camada de Kernel
+PID: 15770 - Processo: kworker/u24:0-flush-btrfs-1 - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 16087 - Processo: kworker/4:0-events - Camada Atual: Camada de Kernel
+PID: 17975 - Processo: chrome - Camada Atual: Camada de Aplicação Geral
+PID: 17997 - Processo: kworker/u24:3-flush-btrfs-1 - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 18020 - Processo: kworker/u24:8-i915 - Camada Atual: Camada de Kernel
+PID: 18248 - Processo: kworker/u25:2 - Camada Atual: Camada de Kernel
+PID: 19601 - Processo: kworker/7:2-events - Camada Atual: Camada de Kernel
+PID: 22156 - Processo: kworker/0:0-rcu_gp - Camada Atual: Camada de Kernel
+PID: 22180 - Processo: kworker/9:2-events - Camada Atual: Camada de Kernel
+PID: 22183 - Processo: kworker/2:0-cgroup_destroy - Camada Atual: Camada de Kernel
+PID: 22220 - Processo: kworker/u24:9-btrfs-endio-write - Camada Atual: Camada de Kernel
+PID: 22221 - Processo: kworker/4:1-events - Camada Atual: Camada de Kernel
+PID: 22234 - Processo: kworker/8:0 - Camada Atual: Camada de Kernel
+PID: 22358 - Processo: processos_camad - Camada Atual: Camada de Aplicação Geral
+PID: 22378 - Processo: sh - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 22379 - Processo: cpuUsage.sh - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 22385 - Processo: sleep - Camada Atual: Camada de Aplicação Geral
+PID: 22390 - Processo: sh - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 22391 - Processo: cpuUsage.sh - Camada Atual: Camada de Interface de Usuário (Shell)
+PID: 22394 - Processo: sleep - Camada Atual: Camada de Aplicação Geral
+PID: 22398 - Processo: ps - Camada Atual: Camada de Aplicação Geral
+PID: 22399 - Processo: processos_camad - Camada Atual: Camada de Aplicação Geral
+===================================================

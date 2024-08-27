@@ -1,0 +1,30 @@
+2024-08-26 19:49:55 - Execução do script iniciada.
+2024-08-26 19:50:09 - Cliente (Usuário) solicitou operação: ler_arquivo
+2024-08-26 19:50:09 - Cliente é root. Pode interagir diretamente com o Kernel.
+2024-08-26 19:50:09 - Kernel recebendo solicitação: ler_arquivo
+2024-08-26 19:51:35 - Arquivo sensível solicitado para leitura: afdskljfhkjashfjaksdhfjkashfjkashdkfakjsdhfkjsdhfkjdhakjdhfkjashdfkjdhakjfsdhfkjdhfkjds
+2024-08-26 19:51:35 - Iniciando leitura do arquivo: afdskljfhkjashfjaksdhfjkashfjkashdkfakjsdhfkjsdhfkjdhakjdhfkjashdfkjdhakjfsdhfkjdhfkjds
+2024-08-26 19:51:35 - Erro: Permissão negada para leitura do arquivo afdskljfhkjashfjaksdhfjkashfjkashdkfakjsdhfkjsdhfkjdhakjdhfkjashdfkjdhakjfsdhfkjdhfkjds.
+2024-08-26 19:54:31 - Execução do script iniciada.
+2024-08-26 19:54:35 - Cliente (Usuário) solicitou operação: ler_arquivo
+2024-08-26 19:54:35 - Cliente é root. Pode interagir diretamente com o Kernel.
+2024-08-26 19:54:35 - Kernel recebendo solicitação: ler_arquivo
+2024-08-26 19:54:43 - Arquivo sensível solicitado para leitura: /home/tscanela/teste
+2024-08-26 19:54:43 - Iniciando leitura do arquivo: /home/tscanela/teste
+2024-08-26 19:54:43 - Permissão concedida para leitura.
+2024-08-26 19:55:15 - Execução do script iniciada.
+2024-08-26 19:55:23 - Cliente (Usuário) solicitou operação: executar_comando_privilegiado
+2024-08-26 19:55:23 - Cliente é root. Pode interagir diretamente com o Kernel.
+2024-08-26 19:55:23 - Kernel recebendo solicitação: executar_comando_privilegiado
+2024-08-26 19:55:35 - Comando privilegiado solicitado: mkdir teste
+2024-08-26 19:55:35 - Tentando executar comando privilegiado: mkdir teste
+2024-08-26 19:55:35 - Permissão concedida para execução do comando.
+2024-08-26 19:56:03 - Execução do script iniciada.
+2024-08-26 19:56:08 - === Informações Técnicas do Sistema ===
+2024-08-26 19:56:08 - Usuário: root
+2024-08-26 19:56:08 - ID do Usuário: 0
+2024-08-26 19:56:08 - Hostname: tsCanela
+2024-08-26 19:56:08 - Kernel: 6.1.0-23-amd64
+2024-08-26 19:56:08 - Arquitetura: x86_64
+2024-08-26 19:56:08 - Sistema Operacional: GNU/Linux
+2024-08-26 19:56:08 - =======================================
